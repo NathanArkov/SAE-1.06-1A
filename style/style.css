@@ -1,0 +1,703 @@
+/* POLICES CUSTOM */
+
+@font-face {
+	font-family: "Kiwari-Light" ; src: url("../fonts/Kiwari-Light.ttf");
+}
+
+@font-face {
+	font-family: "Praktika-Light" ; src: url("../fonts/Praktika-Light.otf");
+}
+
+@font-face {
+	font-family: "made-tommy" ; src: url("../fonts/made-tommy-medium.otf");
+}
+
+/* GENERAL */
+
+body {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../images/kraked-backgroundCarre.png"); 
+  padding-top: 60px;
+}
+
+/* HEADER*/
+
+.menu {
+  z-index: 100;
+}
+
+.divMenuLogo {
+  max-height: 50px;
+  float: left;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding-bottom: 23px;
+}
+
+header .divMenu:hover {
+  border-bottom: 3px solid rgb(25, 25, 25);
+}
+
+.menuMobile {
+	display: none;
+}
+
+.logo {
+  vertical-align: -webkit-baseline-middle;
+  max-height: 40px;
+  position: relative; bottom: 1px; left: -5px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+header {
+  width: 100%;
+  font-size: 18px;
+  top: 0;
+  position: fixed;
+  font-variant: small-caps;
+  font-family: "made-tommy" ;
+	letter-spacing: 1px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+/* TOUT LE HEADER */
+
+nav > ul  {
+  display: flex;
+  text-align: center;
+  height: 60px;
+  padding-inline-start: 0px;
+  background-color: rgb(155, 0, 0);
+  margin-top: 0px;
+}
+ 
+nav ul {
+  list-style-type: none;
+}
+
+/* CHAQUE CASE DU HEADER */
+nav > ul > li {
+  background-color: rgb(155, 0, 0);
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+
+/* LES LIENS CLIQUABLES DANS CHAQUE CASE DU HEADER */
+nav > ul > li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+/* MENU DEROULANT DU HEADER */
+
+.menuDeroulant > a:after{
+  content: '▼';
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+/* LES SOUS MENUS */
+.sousMenu {
+  margin-top: 60px;
+  width: 100%;
+  text-align: left;
+  background-color: rgb(155, 0, 0);
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+/* LIENS CLIQUABLES DES SOUS MENUS */
+.sousMenu > li > a {
+  height: 50px;
+  padding-left: 20px;
+  align-items: center;
+  display: flex;
+}
+
+/* ANIMATIONS DANS LES SOUS MENUS */
+nav > ul > li:hover > a{
+  color: white;
+}
+
+.sousMenu > li:hover {
+  background-color: black;
+}
+
+.sousMenu > li:hover > a {
+  color: white;
+}
+
+@keyframes apparitionSousMenu {
+  0% {
+    border-top: 3px solid rgb(25, 25, 25);
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid rgb(25, 25, 25);
+  }
+}
+
+.menuDeroulant:hover > .sousMenu {
+  animation: apparitionSousMenu 0s forwards;
+}
+
+/* HEADER */
+/* VIDEO */
+
+.video {
+	width: 75%;
+	margin: auto;
+  margin-top: 40px;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  background-color: black;
+}
+
+div iframe {
+  border: 3px solid black;
+}
+
+/* BORDURES POUR FAIRE BEAU  */
+
+.titrePage {
+  border-bottom: 1px solid white;
+  padding-bottom: 1%;
+}
+
+.droite {
+	margin: 3% 3% 3% auto;
+	border-right: solid 2px white;
+  text-align: right;
+}
+
+.gauche {
+	margin: 3% auto 3% 0%;
+	border-left: solid 2px white;
+  text-align: left;
+}
+
+/* PARTIE PRESENTATION DU SITE / CATEGORIES */
+
+.raze {
+  z-index: -1;
+  max-width: 300px;
+}
+
+.steve {
+  max-width: 300px;
+  z-index: -1;
+} 
+
+.link {
+  max-width: 180px;
+  z-index: -1;
+}
+
+.pikachu {
+  max-width: 300px;
+  z-index: -1;
+}
+
+.zelda {
+  max-width: 400px;
+  z-index: -1;
+}
+
+section {
+	color: white;     
+	margin-top: 5%;
+}
+
+section > h1 {
+	text-align : center;
+	font-size: 40px;
+}
+
+section p {
+	font-variant: small-caps;
+}
+
+#presentation {
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+#article_jeux {
+	max-width: 80%;
+	margin: auto;
+}
+
+.jeux {
+	display : inline-block;
+	width: 20%;
+	margin : 0 1% 0 1%;
+	padding : 10px 5% 10px 5%;
+	text-align : center;
+	font-variant: small-caps;
+}
+
+.ubi {
+	width: 85.5%;
+	margin: 0 1% 5% 1%;
+	padding: 10px 5% 10px 5%;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+/* PARTIE AUTEURS / CONTACT */
+
+#contact {
+	margin-top : 5%;
+}
+
+#article_auteur {
+	max-width: 95%;
+	margin: auto;
+}
+
+.auteur {
+	max-width: 30%;
+	display: inline-block;
+	margin: 2% 0.5% 5% 0.2%;
+	font-variant : small-caps;
+	text-align: justify;
+	padding: 1%;
+	vertical-align: top;
+}
+
+.auteur h1 {
+	text-align: justify !important;
+}
+
+.photo_auteur {
+	width: 150px;
+	display: flex;
+	float: right;
+	margin: 10px;
+}
+
+.socials {
+	width: 100%;
+	margin: auto;
+}
+
+.social {
+	width: 50px;
+	display: block;
+	float: right;
+	margin: 10px;
+}
+
+#dons {
+	text-align: center;
+}
+
+#buttonDon {
+	width: 50%;
+	margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 30px;
+	background-color: black;
+	border-top : solid 2px black;
+	color: #F4F4F4;
+}
+
+#footer_1 {	
+	width: 410px;
+	margin: auto;
+}
+
+#footer_1 a {
+	color: #F4F4F4;
+}
+
+#footer_2 {
+	max-width: 640px;
+	margin: auto;
+}
+
+#footer_3 {
+	width:400px;
+	margin: auto;
+}
+
+#footer_3 p {
+	width: 400px !important;
+}
+
+footer p {
+	display : inline-block;
+	text-align : center;
+	margin: 20px 0 20px 0;
+	width: 200px;
+	font-variant: small-caps;
+}
+
+.logo_footer {
+	max-height: 75px;
+	margin: auto;
+	margin-right: 40px;
+}
+
+#footer_21_mobile {
+	display: none;
+}
+
+#footer_22_mobile {
+	display: none;
+}
+
+/* BOUTONS */
+
+.buttonacc {
+  background-color: rgb(255, 79, 79);
+  border-bottom: solid 2px red;
+  border-left: solid 1px rgb(255, 79, 79);
+  border-right: solid 1px rgb(255, 79, 79);
+  border-top: solid 1px rgb(255, 79, 79);
+  color: black;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  min-width: 110px;
+  margin: 10px 3px;
+  cursor: pointer;
+  font-family : "Kiwari-Light";
+  font-weight: bolder;
+}
+
+.buttonacc:hover {
+  background-color: rgb(255, 79, 79);
+  border-bottom: solid 2px red;
+  border-left: solid 1px red;
+  border-right: solid 1px red;
+  border-top: solid 1px red;
+  transform : translateY(-7%);
+  box-shadow: 0 0.5em 0.5em -0.4em red;
+}
+
+.buttonhaut {
+  position: fixed;
+  right: 30px;
+  bottom: 5%;
+  font-variant : small-caps;
+  background-color: rgba(255, 255, 255, 0.678);
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  z-index: 1;
+}
+
+.buttonHautMobile {
+	display: none;
+}
+
+.buttonaccubi {
+  background-color: rgb(255, 79, 79);
+  border-bottom: solid 2px red;
+  border-left: solid 1px rgb(255, 79, 79);
+  border-right: solid 1px rgb(255, 79, 79);
+  border-top: solid 1px rgb(255, 79, 79);
+  color: black;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  max-width: 97.3%;
+  margin: 10px 3px;
+  cursor: pointer;
+  font-family : "Kiwari-Light"; 
+  height: 40%;
+  font-weight: bolder;
+}
+
+.buttonaccubi:hover {
+  background-color: rgb(255, 79, 79);
+  border-bottom: solid 2px red;
+  border-left: solid 1px red;
+  border-right: solid 1px red;
+  border-top: solid 1px red;
+  transform : translateY(-7%);
+  box-shadow: 0 0.5em 0.5em -0.4em red;
+}
+
+.buttondon {
+  background-color: rgb(61, 126, 247);
+  border-bottom: solid 2px rgb(0, 60, 255);
+  border-left: solid 1px rgb(0, 60, 255);
+  border-right: solid 1px rgb(0, 60, 255);
+  border-top: solid 1px rgb(0, 60, 255);
+  color: white;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  font-family : "Kiwari-Light"; 
+  height: 40%;
+  font-weight: bolder;
+}
+
+.buttondon:hover {
+  background-color: rgb(61, 126, 247);
+  border-bottom: solid 2px white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+  border-top: solid 1px white;
+}
+
+/* RPG */
+
+.bodyRPG {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../../images/background-rpg.png");
+	color: white;
+}
+
+/* PAGE */
+
+article {
+	margin: 30px auto 30px auto;
+}
+
+.cac {
+	display: inline-block;
+}
+
+.text {
+	display: inline-block;
+	max-width: 75%;
+	margin-right: 2%;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.img {
+	display: inline-block;
+	width: 20%;
+	margin: 5% 2% auto auto;
+  background-color: #995353;
+}
+
+.imgPng {
+	background-color: transparent !important;
+	display: inline-block;
+	width: 20%;
+	margin: 5% 2% auto auto;
+}
+
+.linkHistoire {
+  max-width: 200px;
+}
+
+.defs {
+	width: 80%;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.imgPng img {
+	width: 100%;
+}
+
+.imgPng .legend {
+	background-color: #995353;
+}
+
+.legend {
+	text-align: center;
+}
+
+.bodyPres > section {
+	display: inline-block;
+	width: 100%;
+	margin: 2% auto 2% auto;
+	text-align: justify;
+}
+
+.bodyPres {
+	width: 90%;
+	margin: 2% auto 2% auto;
+}
+
+.liensSiteRPG {
+	text-decoration: underline;
+	color: white;
+}
+
+#contenu {
+	width: 100%;
+}
+
+#sectionCote {
+	width: 15%;
+	margin-top: 2%;
+	margin-left: 2%;
+	vertical-align: top;
+	display: none;
+}
+
+#contenuCote {
+	border-left: solid 2px white;
+	padding: 10px;
+}
+
+.skyrim {
+  max-width: 250px;
+}
+
+.listeExRPG {
+  text-align: center;
+  list-style-image: url("../icones/pokeball.png");
+}
+
+.dofus {
+  width: 200px;
+}
+
+/* UBISOFT */
+
+.liensSiteUbi {
+	text-decoration: none;
+	color: white;
+}
+
+.bodyUbi {
+	background-image: url("../../images/kraked-backgroundCarre.png");
+}
+
+.classement{
+  max-width: 300px;
+  display: inline-block;
+}
+
+#imagesPresUbi {
+	width: 18%;
+	margin: auto;
+}
+
+.textCentreUbi {
+	text-align: center;
+}
+
+#ubis1 {
+  width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 10px 2px #FF4040;
+	vertical-align: top;
+}
+
+#ubis2 {
+  width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	box-shadow: 0px 0px 10px 2px #FF4040;
+	vertical-align: top;
+}
+
+.ubis{
+  display: inline-block;
+	width: 100%;
+}
+
+#Sommaire {
+	display: inline-block;
+	width: 30%;
+	margin: auto;
+	vertical-align: top;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+#imageClassement {
+	display: inline-block;
+	margin: auto 10% auto 20%;
+}
+
+.listeUbisoft{
+  list-style-image: url("../images/liste-ubi.png");
+  display: inline-block;
+}
+
+.textUbi {
+	line-height: 25px;
+	text-align: justify;
+}
+
+#imagePolitiqueEnvUbi {
+	width: 80%;
+	height: auto;
+	margin: 2% 10%;
+}
+
+/* SANDBOX */
+
+.bodySandbox {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../../images/background-sandbox.png");
+	color: white;
+}
+
+/* PAGE */
+
+.liensSite {
+	text-decoration: none;
+	color: white;
+}
+
+#titre {
+	text-align: center;
+}
+
+.liensSitesSandbox {
+	text-decoration: underline;
+	color: white;
+}
+
+/* TACTICAL SHOOTERS */
+
+.bodyTC {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../images/background-tc.png");
+}
+
+.textIntroPres {
+  padding-top: 7px;
+}
+
+.lien {
+  color: white;
+}

@@ -1,0 +1,678 @@
+@font-face {
+	font-family: "Praktika-Light" ; src: url("../fonts/Praktika-Light.otf");
+}
+
+@font-face {
+	font-family: "Kiwari-Light" ; src: url("../fonts/Kiwari-Light.ttf");
+}
+
+@font-face {
+	font-family: "made-tommy" ; src: url("../fonts/made-tommy-medium.otf");
+}
+
+/* GENERAL */
+
+body {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../images/background-nadrimed-mobile.png");
+	color: white;
+}
+
+header {
+	background-color: rgb(155, 0, 0);
+	margin: 0;
+	margin-bottom: 15%;
+	padding : 10px;
+  max-height: 50px; 
+	/*width: 100%;*/
+	position : sticky;
+	top: 0;
+  padding-top: 10px;
+	z-index: 10;
+}
+
+.menu {
+	display: none;
+}
+
+.video {
+	display: none;
+}
+
+section {
+	color: white;     
+	margin-top: 5%;
+}
+
+section > h1 {
+	text-align : center;
+	font-size: 40px;
+}
+
+section p {
+	font-variant: small-caps;
+}
+
+/* MENU MOBILE */
+
+.menuMobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.lienMenuMobile {
+  text-decoration: none;
+  color: #1E1E23;
+  opacity:1;
+  font-family: "made-tommy", "sans serif";
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.lienMenuMobile:hover {
+  color: rgb(155, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: rgb(155, 0, 0);
+  height: 65px;
+}
+
+#menuToggle {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu
+{
+  position: absolute;
+  width: 50%;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #F5F6FA;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+#menuToggle input:checked ~ span
+{
+  background: black;
+}
+
+#menuToggle input:checked ~ #span1
+{
+  transform:  translateY(7px) rotate(45deg);
+}
+
+#menuToggle input:checked ~ #span2
+{
+  opacity: 0;
+}
+
+#menuToggle input:checked ~ #span3
+{
+  transform:  translateY(-7px) rotate(-45deg);
+}
+
+#logoMenuMobile img{
+	height: 50px;
+	position: relative;
+	left: 33%;
+	bottom: 10px;
+}
+
+/* PRESENTATION DU SITE */
+
+#presentation {
+	max-width: 95%;
+	margin: auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+#article_jeux {
+	max-width: 80%;
+	margin: auto;
+}
+
+.jeux {
+	margin : 0 1% 0 1%;
+	padding : 10px 5% 10px 5%;
+	text-align : center;
+	font-variant: small-caps;
+}
+
+#rpg {
+  scroll-margin-top: 80px;
+}
+
+#tc {
+  scroll-margin-top: 80px;
+}
+
+#sb {
+  scroll-margin-top: 80px;
+}
+
+.ubi {
+	margin: 0 1% 5% 1%;
+	padding: 10px 5%;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+/* CONTACT / AUTEURS */
+
+#contact {
+	margin-top : 5%;
+}
+
+#article_auteur {
+	max-width: 95%;
+	margin: auto;
+}
+
+.auteur {
+	margin: 2% 0.5% 100px 0.2%;
+	font-variant : small-caps;
+	text-align: justify;
+	padding: 1%;
+}
+
+.photo_auteur {
+	width: 150px;
+	display: flex;
+	float: right;
+	margin: 10px;
+}
+
+.socials {
+	width: 100%;
+	margin: auto;
+}
+
+#socials {
+	width: 50px;
+	display: block;
+	float: right;
+	margin: 10px;
+}
+
+#dons {
+	margin: 2% auto 100px auto;
+	text-align: center;
+	padding: 1%;
+	width: 80%;
+}
+
+#buttondon {
+	width: 50%;
+	margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 30px;
+	background-color: black;
+	border-top : solid 2px black;
+	color: #F4F4F4;
+}
+
+#footer_1 {	
+	width: 100%;
+	margin: auto;
+}
+
+#footer_1 a {
+	color: #F4F4F4;
+}
+
+#footer_2 {
+	display: none;
+}
+
+#footer_21_mobile {
+  width: 50%;
+	margin: auto;
+}
+
+#footer_22_mobile {
+  width: 40%;
+	margin: auto;
+}
+
+#footer_3 {
+	width: 100%;
+	margin: auto;
+}
+
+#footer_3 p {
+	width: 100%;
+}
+
+footer p {
+	display : inline-block;
+	text-align : center;
+	margin: 20px 0 20px 0;
+	width: 49%;
+	font-variant: small-caps;
+}
+
+.logo_footer {
+	max-height: 75px;
+	margin: auto;
+}
+
+/* BOUTONS */
+
+.buttonacc {
+	background-color: rgb(255, 79, 79);
+	border-bottom: solid 2px red;
+	border-left: solid 1px rgb(255, 79, 79);
+	border-right: solid 1px rgb(255, 79, 79);
+	border-top: solid 1px rgb(255, 79, 79);
+	color: black;
+	padding: 1px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+	min-width: 110px;
+	margin: 10px 3px;
+	cursor: pointer;
+	font-family : "Kiwari-Light";
+	font-weight: bolder;
+}
+
+.buttonacc:hover {
+	background-color: rgb(255, 79, 79);
+	border-bottom: solid 2px red;
+	border-left: solid 1px red;
+	border-right: solid 1px red;
+	border-top: solid 1px red;
+	color: black;
+	padding: 1px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+	font-weight: bolder;
+	margin: 10px 3px 10px;
+	cursor: pointer;
+	transform : translateY(-7%);
+	box-shadow: 0 0.5em 0.5em -0.4em red;
+}
+
+.buttonaccubi {
+	background-color: rgb(255, 79, 79);
+	border-bottom: solid 2px red;
+	border-left: solid 1px rgb(255, 79, 79);
+	border-right: solid 1px rgb(255, 79, 79);
+	border-top: solid 1px rgb(255, 79, 79);
+	color: black;
+	padding: 1px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+	max-width: 97.3%;
+	margin: 10px 3px;
+	cursor: pointer;
+	font-family : "Kiwari-Light"; 
+	height: 40%;
+	font-weight: bolder;
+}
+
+.buttonaccubi:hover {
+	background-color: rgb(255, 79, 79);
+	border-bottom: solid 2px red;
+	border-left: solid 1px red;
+	border-right: solid 1px red;
+	border-top: solid 1px red;
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 1px 5px;
+	margin: 10px 3px 10px;
+	cursor: pointer;
+	transform : translateY(-7%);
+	box-shadow: 0 0.5em 0.5em -0.4em red;
+}
+
+.buttonhaut {
+	display: none;
+}
+
+.buttonHautMobile {
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	font-variant : small-caps;
+	background-color: rgba(255, 255, 255, 0.678);
+	padding: 5px 27px;
+	text-decoration: none;
+	color: black;
+	z-index: 1;
+}
+
+.buttondon {
+  background-color: rgb(61, 126, 247);
+  border-bottom: solid 2px rgb(0, 60, 255);
+  border-left: solid 1px rgb(0, 60, 255);
+  border-right: solid 1px rgb(0, 60, 255);
+  border-top: solid 1px rgb(0, 60, 255);
+  color: white;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  font-family : "Kiwari-Light"; 
+  height: 40%;
+  font-weight: bolder;
+}
+
+.buttondon:hover {
+  background-color: rgb(61, 126, 247);
+  border-bottom: solid 2px white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+  border-top: solid 1px white;
+}
+
+/* RPG */
+
+.bodyRPG {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../../images/background-rpg.png");
+	color: white;
+}
+
+/* PAGE */
+
+.titrePage {
+  border-bottom: 1px solid white;
+  padding-bottom: 1%;
+}
+
+article {
+	margin: 30px auto 30px auto;
+}
+
+.cac {
+	display: block;
+	margin-top: 100px;
+}
+
+.text {
+	display: block;
+	max-width: 90%;
+	margin: auto;
+	line-height: 30px;
+}
+
+.img {
+	display: block;
+	width: 70%;
+	margin: 5% auto auto auto;
+  background-color: #995353;
+}
+
+.imgPng {
+	background-color: transparent !important;
+	display: block;
+	width: 70%;
+	margin: 5% auto auto auto;
+}
+
+.linkHistoire {
+  max-width: 200px;
+}
+
+.defs {
+	width: 80%;
+	margin: 3% auto 3% auto;
+	vertical-align: top;
+	border-left: solid 2px white;
+	padding: 10px;
+}
+
+.img img {
+	width: 100%;
+}
+
+.imgPng img {
+	width: 100%;
+}
+
+.imgPng .legend {
+	background-color: #995353;
+}
+
+.legend {
+	text-align: center;
+}
+
+.legend p {
+	padding-bottom: 2%;
+}
+
+.bodyPres > section {
+	display: block;
+	width: 100%;
+	margin: 2% auto 2% auto;
+	text-align: justify;
+	
+}
+
+.bodyPres {
+	width: 90%;
+	margin: 2% auto 2% auto;
+}
+
+.liensSiteRPG {
+	text-decoration: underline;
+	color: white;
+}
+
+#contenu {
+	width: 100%;
+}
+
+#sectionCote {
+	width: 15%;
+	margin-top: 2%;
+	margin-left: 2%;
+	vertical-align: top;
+	display: none;
+}
+
+#contenuCote {
+	border-left: solid 2px white;
+	padding: 10px;
+}
+
+.skyrim {
+  max-width: 250px;
+}
+
+.listeExRPG {
+  text-align: center;
+  list-style-image: url("../icones/pokeball.png");
+}
+
+.dofus {
+  width: 200px;
+}
+
+/* SANDBOX */
+
+.bodySandbox {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../../images/background-sandbox.png");
+	color: white;
+}
+
+/* PAGE */
+
+.liensSite {
+	text-decoration: none;
+	color: white;
+}
+
+#titre {
+	text-align: center;
+}
+
+.liensSitesSandbox {
+	text-decoration: underline;
+	color: white;
+}
+
+/* TACTICAL SHOOTERS */
+
+.bodyTC {
+	font-family: "Praktika-Light", Arial, sans-serif;
+	margin: auto;
+	background-image: url("../../images/background-tc.png");
+	color: white;
+}
+
+.lien {
+  color: white;
+}
+
+/* UBISOFT */
+
+.liensSiteUbi {
+	text-decoration: none;
+	color: white;
+}
+
+.bodyUbi {
+	background-image: url("../../images/kraked-backgroundCarre.png");
+}
+
+.classement{
+  max-width: 200px;
+  display: inline-block;
+}
+
+#imagesPresUbi {
+	width: 50%;
+	margin: auto;
+}
+
+.textCentreUbi {
+	text-align: center;
+}
+
+#ubis1 {
+  width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 10px 2px #FF4040;
+	vertical-align: top;
+}
+
+#ubis2 {
+  width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	box-shadow: 0px 0px 10px 2px #FF4040;
+	vertical-align: top;
+
+}
+
+.ubis{
+  display: inline-block;
+	width: 100%;
+}
+
+#Sommaire {
+	display: inline-block;
+	width: 30%;
+	margin: auto;
+	vertical-align: top;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+#imageClassement {
+	display: inline-block;
+	margin: auto 10% auto 20%;
+}
+
+.listeUbisoft{
+  list-style-image: url("../images/liste-ubi.png");
+  display: inline-block;
+}
+
+.textUbi {
+	line-height: 25px;
+	text-align: justify;
+}
+
+#imagePolitiqueEnvUbi {
+	width: 80%;
+	height: auto;
+	margin: 2% 10%;
+}
